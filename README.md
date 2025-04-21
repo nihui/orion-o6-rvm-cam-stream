@@ -1,5 +1,9 @@
 # orion-o6-rvm-cam-stream
 
+This is a sample project for real-time video segmentation of a USB camera and streaming it in jpg format over HTTP. It supports neural network inference on the CPU/GPU/NPU of Orion O6.
+
+The following steps should be performed on Orion O6.
+
 ## build and install ncnn
 
 https://github.com/Tencent/ncnn/wiki/how-to-build#build-for-linux
@@ -39,11 +43,11 @@ cd orion-o6-rvm-cam-stream/build
 ./test
 ```
 
-this program will open usb camera (/dev/video3) ➡️ rvm (robust human video matting) portrait on npu ➡️ stream jpeg on http
+This program will open usb camera (/dev/video3) ➡️ rvm (robust human video matting) portrait on npu ➡️ stream jpeg on http
 
-open the streaming url with browser, and you can see the rvm result
+Open the streaming url with browser, and you can see the rvm result
 
-sample output
+Sample output
 ```
 [0 Mali-G720-Immortalis]  queueC=0[2]  queueG=0[2]  queueT=0[2]
 [0 Mali-G720-Immortalis]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
