@@ -82,3 +82,25 @@ opencv-mobile HW JPG encoder with v4l cix
 client accepted 192.168.1.54 41256
 ```
 
+## some note for main.cpp
+
+change camera device index and resolution
+```cpp
+cv::VideoCapture cap;
+cap.set(cv::CAP_PROP_FRAME_WIDTH, 240);
+cap.set(cv::CAP_PROP_FRAME_HEIGHT, 240);
+cap.open(3);
+```
+
+change http streaming port
+```
+cv::VideoWriter http;
+http.open("httpjpg", 7766);
+```
+
+change rvm inference backend
+```
+// rvm_cpu.run(bgr_512, out);
+// rvm_gpu.run(bgr_512, out);
+rvm_npu.run(bgr_512, out);
+```
