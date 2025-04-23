@@ -2,6 +2,8 @@
 
 This is a sample project for real-time video segmentation of a USB camera and streaming it in jpg format over HTTP. It supports neural network inference on the CPU/GPU/NPU of Orion O6.
 
+【orion o6 CPU GPU NPU 摄像头实时 RVM 人像分割和 http 推流】https://www.bilibili.com/video/BV1uN59zSEuf
+
 The following steps should be performed on Orion O6.
 
 ## build and install ncnn
